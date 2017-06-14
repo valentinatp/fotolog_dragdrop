@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FOTOLOG - ..::ÁrÉnItÁ .´´´ ÁmíGáS x CrÉw::..</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 logo">
+          <img src="img/fotolog-logo.png" alt="">
+        </div>
+      </div>
+    </div>
+  </header>
+  <section id="bannerflog">
+    <div class="container">
+      <div class="col-md-12 text-center">
+        <h1>..::ÁrÉnItÁ .´´´ ÁmíGáS x CrÉw::..</h1>
+      </div>
+    </div>
+  </section>
+  <section id="contenido">
+    <div class="container">
+      <div class="col-md-2 recientes">
+        <a href="" class="fotos">Fotos Recientes</a>
+        <img id="foto1" draggable="true" ondragstart="drag(event)" src="img/jarcor.jpg">
+        <img id="foto2" draggable="true" ondragstart="drag(event)" src="img/foto_0920140822124434.jpg" alt="">
+        <img id="foto3" draggable="true" ondragstart="drag(event)" src="img/i-62869.jpeg" alt="">
+        <img id="foto4" draggable="true" ondragstart="drag(event)" src="img/p3.jpg" alt="">
+      </div>
+      <div class="col-md-8">
+        <img src="img/m1_768_11MS.jpg" alt="">
+        <p>AqUi EStAáá Mi AmIgA ArEnItAáÁÁ</p>
+      </div>
+      <div class="col-md-2 ff">
+        <a href="" class="fotos">Fotos Favoritas</a>
+        <div class="marco-foto" ondragover="permitirDrop(event)" ondrop="drop(event)"></div>
+        <div class="marco-foto" ondragover="permitirDrop(event)" ondrop="drop(event)"></div>
+        <div class="marco-foto" ondragover="permitirDrop(event)" ondrop="drop(event)"></div>
+      </div>
+    </div>
+  </section>
+  <section id="dejar-posteo">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 text-center">
+          <strong>Deja tu comentario</strong>
+          <input id="nombre" type="text" placeholder="nombre">
+          <textarea name="comentario" id="cajaposteos" cols="30" rows="10"></textarea>
+          <button onclick="agregaPosteo()">Enviar</button>
+
+          <div id="contenedor-posteos" class="text-left">
+            <!--
+            <div class="posteo">
+              <strong>Nombre del usuario</strong>
+              <p>Este es un ejemplo nada mas</p>
+              <p class="corazon rojo"><i class="fa fa-heart" aria-hidden="true"></i></p>
+              <hr>
+            </div>
+            -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="js/main.js"></script>
+</body>
+</html>
