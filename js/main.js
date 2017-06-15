@@ -71,15 +71,17 @@ function agregaPosteo() {
 }
 
 function drag(ev) {
-  console.log(ev.target.src);
-  ev.dataTransfer.setData('text', ev.target.id);
+  console.log(ev.target.id);//ver en consola.
+  ev.dataTransfer.setData('text', ev.target.id);//indicamos el tipo de dato.
 }
 
 function permitirDrop(ev){
-  ev.preventDefault();
+  ev.preventDefault();//evita que el navegador manipule nuestros datos
 }
 function drop(ev) {
   ev.preventDefault();
   var id_foto = ev.dataTransfer.getData('text');
+  //tomamos el dato que hemos arrastrado
   ev.target.appendChild(document.getElementById(id_foto));
+  //agregamos el elemento arrastrado donde se produjo el evento ondrop.
 }
